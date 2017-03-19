@@ -20,7 +20,6 @@ const patientName = function(data) {
 		let firstName = patientData.name[i].given[0];
 		let lastName = patientData.name[i].family[0];
 		return `Name of patient: ${firstName} ${lastName}`;
-	return "hi";
 	}
 }
 
