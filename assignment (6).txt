@@ -1,0 +1,45 @@
+Part 1: Basic QA questions
+
+Q1 
+Attached in the email (patient.json) is an example FHIR message used to transfer patient information (in JSON format). There are multiple errors within the file. Please identify and fix as many errors as possible within the JSON. List out what changes you made and attach a fixed version back.
+
+Q2 
+Write at least 3 unit tests (any language, can be pseudo code) for the below javascript function:
+
+var fizzBuzz : function( test ){
+  if ( test % 3 === 0 ){
+   	return 'Fizz';
+  } else if (test % 5 === 0 ){
+	return 'Buzz';
+  }
+  return '';
+}
+
+Part 2: Open ended QA questions
+
+Q3
+Given a basic scheduling software system for patient appointments that sends out emails 24 hours before the scheduled time to the patient email as a reminder. Describe some tests you would write to ensure things were working and scenarios that you might attempt to break the system.
+
+Q4
+Using the JSON file that you fixed in question 1, create a simple web application (provide link if you are hosting it or the github link to source code) that can parse the JSON and display the following information in html:
+
+Name of patient:
+Organization name:
+Gender:
+Number of conditions they have: 
+List of all conditions: 
+
+E.g.
+
+Name of patient: Jane Doe
+Organization name: College Hospital
+Gender: Female
+Number of conditions they have: 2
+List of all conditions: 
+- Epilepsy
+- Sleep apnea
+
+
+
+
+
