@@ -1,11 +1,12 @@
 comma line 2
-open brace line 4
+opened brace line 4
 fixed spaces line 6, opened div tag
 colon line 8
 comma line 14; http instead of htt
 comma line 17
 comma line 19
-close brace line 21
+closed brace line 21
+closed bracket line 22
 indent line 21
 comma line 27
 quotation mark line 33

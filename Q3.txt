@@ -1,0 +1,5 @@
+Q3
+
+Some basic tests I would write would ensure that the emails being sent out have a subject line and a text body. This means that the tests will check the desired HTML of the email body against the received email body and the desired subject line against the received subject line.
+
+A scheduling software system would also need to account for time changes as exceptions to a 24 hour notification. To break the system, I would enter a date from the future.

@@ -1,0 +1,25 @@
+{
+  "name": "seamless-md-code-screen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Q2-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clairellesage/seamless-md-code-screen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clairellesage/seamless-md-code-screen/issues"
+  },
+  "homepage": "https://github.com/clairellesage/seamless-md-code-screen#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^1.14.0"
+  }
+}
