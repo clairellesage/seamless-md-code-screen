@@ -1,4 +1,4 @@
-const patientData = require('./patient7')
+const patientData = require('./patient7');
 
 const parsePatientData = function(data) {
 	return patientObj = {
@@ -9,7 +9,6 @@ const parsePatientData = function(data) {
 		listAllConditions: listAllConditions(data)
 	}
 }
-
 
 const patientName = function(data) {
 	for (i in patientData.name) {
@@ -44,6 +43,6 @@ const listAllConditions = function(data) {
 }
 
 
-parsePatientData(patientData)
+parsePatientData(patientData);
 
-module.exports = patientObj
+module.exports = patientObj;
