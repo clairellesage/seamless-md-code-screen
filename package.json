@@ -18,6 +18,6 @@
   "homepage": "https://github.com/clairellesage/seamless-md-code-screen#readme",
   "dependencies": {
     "chai": "^3.5.0",
-    "express": "^4.15.2",
+    "express": "^4.15.2"
   }
 }
