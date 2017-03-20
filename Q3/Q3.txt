@@ -1,0 +1,5 @@
+Q3
+
+Some basic tests I would write would ensure that the emails being sent out have a subject line and a text body. This means that the tests will check the desired HTML of the email body against the received email body and the desired subject line against the received subject line. If an email becomes invalid, then the program should throw an error.
+
+A scheduling software system would also need to include tests that are specific to time. For example, daylight savings time might require an exception to a 24 hour notification. More importantly there would need to be tests to ensure that 24 hours' notice works over month and year boundaries. To break the system, I would try to schedule an appointment for the next day, with less than 24 hours' notice.

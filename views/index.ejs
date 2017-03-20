@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Data</title>
+    <script src="./patient-parser.js"></script>
+</head>
+<body>
+  	<p>Name of patient: <%= patientData.patientName %></p>
+  	<p>Organization name: <%= patientData.organizationName %></p>
+  	<p>Gender: <%= patientData.patientGender %></p>
+  	<p>Number of conditions: <%= patientData.numberOfConditions %></p>
+  	<dl>List of all conditions: <p>
+  		<% for (i in patientData.listAllConditions) { %>
+  		<li><%= patientData.listAllConditions[i] %></li>
+  		<% } %>
+  	</dl>
+  	</p>
+</body>
+</html>

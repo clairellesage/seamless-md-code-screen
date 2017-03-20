@@ -18,8 +18,12 @@
   "homepage": "https://github.com/clairellesage/seamless-md-code-screen#readme",
   "dependencies": {
     "chai": "^3.5.0",
+    "express": "^4.15.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {
     "webpack": "^1.14.0"
   }
 }

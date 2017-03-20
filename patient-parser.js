@@ -1,25 +1,30 @@
 const patientData = require('./patient7')
 
 const parsePatientData = function(data) {
-	return html = `<p>${patientName(data)}</p>\n<p>${organizationName(data)}</p>\n<p>${patientGender(data)}</p>\n<p>${numberOfConditions(data)}</p>\n<p>${listAllConditions(data)}</p>`
+	return patientObj = {
+		patientName: patientName(data), 
+		organizationName: organizationName(data),
+		patientGender: patientGender(data),
+		numberOfConditions: numberOfConditions(data),
+		listAllConditions: listAllConditions(data)
+	}
 }
 
 
 const patientName = function(data) {
 	for (i in patientData.name) {
-		let firstName = patientData.name[i].given[0];
-		let lastName = patientData.name[i].family[0];
-		return `Name of patient: ${firstName} ${lastName}`;
+		let name = `${patientData.name[i].given[0]} ${patientData.name[i].family[0]}`;
+		return name;
 	}
 }
 
 const organizationName = function(data) {
-	return `Organization name: ${data.managingOrganization.display}`;
+	return data.managingOrganization.display;
 }
 
 const patientGender = function(data) {
 	let gender = capitalize(data.gender);
-	return `Gender: ${gender}`;
+	return gender;
 }
 
 const capitalize = function(word) {
@@ -27,17 +32,18 @@ const capitalize = function(word) {
 }
 
 const numberOfConditions = function(data) {
-	return `Number of conditions they have: ${data.conditions.length}`;
+	return data.conditions.length;
 }
 
 const listAllConditions = function(data) {
 	let conditionsList = [];
 	for (condition in data.conditions) {
-		conditionsList.push(`\n<li>${data.conditions[condition]}</li>`);
+		conditionsList.push(data.conditions[condition]);
 	}
-	return `<ul>List all conditions: ${conditionsList}\n</ul>`;
+	return conditionsList;
 }
 
 
-console.log(parsePatientData(patientData))
+parsePatientData(patientData)
 
+module.exports = patientObj
